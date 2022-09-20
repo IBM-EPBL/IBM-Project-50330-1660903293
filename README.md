@@ -2,12 +2,12 @@
  <img src="CUSTOMER.png" />
 </h1>
 
-# CUSTOMER CARE REGISTRY <img src="https://media1.giphy.com/media/QC7U8wp3Td0FOogtgN/giphy.gif?cid=790b76114d358e1930e05c1faf6f0f0eb3269bd1220a8644&rid=giphy.gif&ct=s">
+# CUSTOMER CARE REGISTRY <img src="https://media1.giphy.com/media/QC7U8wp3Td0FOogtgN/giphy.gif?cid=790b76114d358e1930e05c1faf6f0f0eb3269bd1220a8644&rid=giphy.gif&ct=s" width=35px>
 
 - TECHNOLOGY : CLOUD APP DEVELOPMENT
 - TEAM ID    : PNT2022TMID28637
 
-# PROJECT DESCRIPTION <img src="https://media3.giphy.com/media/bBqYdhH60AeETUz0du/giphy.gif?cid=ecf05e47xhjiyljcwf6w0opc1rwtp1yrgg4dz5flq62rmx5h&rid=giphy.gif&ct=s">
+# PROJECT DESCRIPTION <img src="https://media3.giphy.com/media/bBqYdhH60AeETUz0du/giphy.gif?cid=ecf05e47xhjiyljcwf6w0opc1rwtp1yrgg4dz5flq62rmx5h&rid=giphy.gif&ct=s" width=35px>
 
 This Application has been developed to help the customer in processing their complaints.  The customers can raise the ticket with a detailed description of the issue.  An Agent will be assigned to the Customer to solve the problem.  Whenever the agent is assigned to a customer they will be notified with an email alert.  Customers can view the status of the ticket till the service is provided.
 
@@ -17,13 +17,13 @@ This Application has been developed to help the customer in processing their com
  USER :
  They can register for an account.  After the login, they can create the complaint with a description of the problem they are facing.  Each user will be assigned with an agent.  They can view the status of their complaint.
 
-## TEAM MEMBERS <img src="https://media0.giphy.com/media/kSO8h7MGiPcMaSv25r/giphy.gif?cid=ecf05e47cxy9v8yp7ki1hxkd47qsstzqgxb2b394pykovnox&rid=giphy.gif&ct=s">
+## TEAM MEMBERS <img src="https://media0.giphy.com/media/kSO8h7MGiPcMaSv25r/giphy.gif?cid=ecf05e47cxy9v8yp7ki1hxkd47qsstzqgxb2b394pykovnox&rid=giphy.gif&ct=s" width=35px>
 - ASWIN KUMAR R
 - ARUNACHALAM M   
 - YASHWANTHRAJ J S
 - VENKATRAJ R
 
-## LINKS <img src="https://media0.giphy.com/media/z49wVcqTT5SMudT983/giphy.gif?cid=ecf05e47mwmeatdc78osldmkda4nldxxu3m2t3l3ldsmxpn4&rid=giphy.gif&ct=s">
+## LINKS <img src="https://media0.giphy.com/media/z49wVcqTT5SMudT983/giphy.gif?cid=ecf05e47mwmeatdc78osldmkda4nldxxu3m2t3l3ldsmxpn4&rid=giphy.gif&ct=s" width=35px>
 - ASWIN KUMAR R     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Aswin%20Kumar%20R%20(Leader))
 - ARUNACHALAM M     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Arunachalam%20M) 
 - YASHWANTHRAJ J S  [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Yashwanth%20Raj%20J%20S)
