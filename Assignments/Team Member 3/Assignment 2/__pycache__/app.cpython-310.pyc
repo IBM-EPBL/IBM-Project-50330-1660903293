@@ -1,0 +1,65 @@
+o
+
+    ÆŸ-cN  ã                   @   sä   d dl mZmZmZmZmZmZmZ d dlZee	ƒZ
+de
+_e d¡Z
+e
+ d¡ e
+ ¡  e
+ d¡dd„ ƒZe
+jd	d
+dgdd
+d„ ƒZe
+jdd
+dgddd„ ƒZe
+jdd
+dgddd„ ƒZe
+ d¡dd„ ƒZe	dkrpe
+jdd dS dS )é    )ÚFlaskÚrender_templateÚrequestÚflashÚredirectÚurl_forÚsessionNZ123údatabase.dbzqcreate table if not exists customer(pid integer primary key,name text,address text,contact integer,password text)ú/c                   C   ó   t dƒS )Nz
+index.html©r   © r
+   r
+   ú/D:\Asssignment\Login-Registration-SQLite\app.pyÚindex   ó   r   z/loginÚGETÚPOST)Úmethodsc                  C   sŠ   t jdkr?t jd } t jd }t d¡}tj|_| ¡ }| d| |f¡ | 	¡ }|r:|d t
+d< |d t
+d< tdƒS tddƒ tt
+d	ƒƒS )
+Nr   ÚnameÚpasswordr	   z2select * from customer where name=? and password=?ÚcustomerzUsername and Password MismatchÚdangerr   )r   ÚmethodÚformÚsqlite3ÚconnectZRowZrow_factoryÚcursorÚexecuteZfetchoner   r   r   r   )r   r   ÚconÚcurÚdatar
+   r
+   r   Úlogin   s   
+
+
+
+
+r!   z	/customerc                   C   r   )Nz
+customer.htmlr   r
+   r
+   r
+   r   r   #   r   r   z	/registerc               	   C   sÀ   t jdkr\zJz2t jd } t jd }t jd }t jd }t d¡}| ¡ }| d| |||f¡ | ¡  tdd	ƒ W n   td
+dƒ Y W t	t
+dƒƒS W t	t
+dƒƒS t	t
+dƒƒ     Y S td
+ƒS )Nr   r   ÚaddressÚcontactr   r	   zBinsert into customer(name,address,contact,password)values(?,?,?,?)zRecord Added  SuccessfullyÚsuccesszError in Insert Operationr   r   z
+register.html)
+r   r   r   r   r   r   r   Zcommitr   r   r   Úcloser   )r   r"   r#   r   r   r   r
+   r
+   r   Úregister'   s"   
+
+
+
+
+
+ü$r&   z/logoutc                   C   s   t  ¡  ttdƒƒS )Nr   )r   Úclearr   r   r
+   r
+   r
+   r   Úlogout<   s   r(   Ú__main__T)Údebug)Úflaskr   r   r   r   r   r   r   r   Ú__name__ÚappÚ
+secret_keyr   r   r   r%   Úrouter   r!   r   r&   r(   Úrunr
+   r
+   r
+   r   Ú<module>   s(   $ 
+
+
+
+
+
+
+ÿ
