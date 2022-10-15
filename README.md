@@ -24,10 +24,10 @@ This Application has been developed to help the customer in processing their com
 - VENKATRAJ R
 
 ## LINKS <img src="https://media0.giphy.com/media/z49wVcqTT5SMudT983/giphy.gif?cid=ecf05e47mwmeatdc78osldmkda4nldxxu3m2t3l3ldsmxpn4&rid=giphy.gif&ct=s" width=35px>
-- ASWIN KUMAR R     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Aswin%20Kumar%20R%20(Leader))
-- ARUNACHALAM M     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Arunachalam%20M) 
-- YASHWANTHRAJ J S  [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Yashwanth%20Raj%20J%20S)
-- VENKATRAJ R       [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Venkatraj%20R)
+- ASWIN KUMAR R     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Assignments/Team%20Lead%201)
+- ARUNACHALAM M     [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Assignments/Team%20Member%203) 
+- YASHWANTHRAJ J S  [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Assignments/Team%20Member%201)
+- VENKATRAJ R       [TASK](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/tree/main/Assignments/Team%20Member%202)
 
 
 
@@ -36,4 +36,4 @@ This Application has been developed to help the customer in processing their com
       An empathy map is a visual tool used to gain insight into a user's perspective. Using one allows you to tap into a user's mind and gain their unique perspective. Empathy maps are great in all scenarios where you have to consider user feelings.
 
 
-[EMPATHY MAP LINK ](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/blob/main/Empathy%20Map%20Canvas.pdf)are Registry
+[EMPATHY MAP LINK ](https://github.com/IBM-EPBL/IBM-Project-50330-1660903293/blob/main/Project%20Design%20%26%20Planning/Ideation%20Phase/Empathy%20Map.pdf)are Registry
