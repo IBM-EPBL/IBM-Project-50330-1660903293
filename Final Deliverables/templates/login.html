@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Login
+</title>
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+<div class="forpadding">
+
+    <!-- for box of the signup form -->
+    <div class="sign">
+        <div>
+            <p class="fortitle">
+                Sign In
+            </p>
+            <hr>
+            <form action="/login" method="post">
+                <div class="forform">
+                    <div class="textinformleft">
+                        Username
+                    </div>
+                    <div class="textinformright">
+                        <input type="name" name="username">
+                    </div>
+                </div>
+
+                <div class="forform">
+                    <div class="textinformleft">
+                        Password
+                    </div>
+                    <div class="textinformright">
+                        <input type="password" name="pass">
+                    </div>
+                </div>
+
+                <br>
+                <div>
+                    <button class="forbutton" type="submit"> Sign In >></button>
+                </div>
+            </form>
+            <br>
+
+            <div>
+                New user? <a href="/signup">Sign up</a>
+            </div>
+            <br>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

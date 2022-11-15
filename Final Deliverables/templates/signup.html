@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Sign Up
+</title>
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="forpadding">
+
+    <!-- for box of the signup form -->
+    <div class="sign">
+        <div>
+            <p class="fortitle">
+                Register Now!!
+            </p>
+            <hr>
+            <form action="/signup" method="post">
+                <div class="forform">
+                    <div class="textinformleft">
+                        Username
+                    </div>
+                    <div class="textinformright">
+                        <input type="name" name="username">
+                    </div>
+                </div>
+                <div class="forform">
+                    <div class="textinformleft">
+                        Name
+                    </div>
+                    <div class="textinformright">
+                        <input type="name" name="name">
+                    </div>
+                </div>
+                <div class="forform">
+                    <div class="textinformleft">
+                        E - mail
+                    </div>
+                    <div class="textinformright">
+                        <input type="name" name="email">
+                    </div>
+                </div>
+                <div class="forform">
+                    <div class="textinformleft">
+                        Phone Number
+                    </div>
+                    <div class="textinformright">
+                        <input type="name" name="phn">
+                    </div>
+                </div>
+                <div class="forform">
+                    <div class="textinformleft">
+                        Password
+                    </div>
+                    <div class="textinformright">
+                        <input type="password" name="pass">
+                    </div>
+                </div>
+                <div class="forform">
+                    <div class="textinformleft">
+                        Re - enter Password
+                    </div>
+                    <div class="textinformright">
+                        <input type="password" name="repass">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button class="forbutton" type="submit"> Sign up >></button>
+                </div>
+            </form>
+            <br>
+            <div>
+                {{msg}}
+            </div>
+            <br>
+            <div>
+                Already have an account? <a href="/login">Sign in</a>
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
