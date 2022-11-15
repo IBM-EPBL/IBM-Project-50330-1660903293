@@ -1,0 +1,182 @@
+.sign {
+    border-radius: 1rem;
+    background-color: rgb(102, 150, 184);
+    text-align: center;
+    padding: 1%;
+}
+
+.fortitle {
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+
+.forp {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textinformleft {
+    text-align: left;
+    padding-left: 5%;
+    width: 50%;
+    border-radius: 1rem;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textinformright {
+    width: 50%;
+    padding-right: 10px;
+    border-radius: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.textinformright2 {
+    width: 100%;
+    text-align: center;
+    padding-right: 10px;
+    border-radius: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+    padding-left: 15px;
+}
+
+input:focus {
+    border-color: yellow;
+}
+
+.forform {
+    display: flex;
+    padding: 15px;
+    border-radius: 1rem;
+
+}
+
+.forpadding {
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+body {
+    background-image: url('bg7.png');
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    /* background-image: url('F:\Own\IBM project\Sample2\static\css\bg.png'); */
+}
+
+.forbutton {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: white;
+    cursor: pointer;
+}
+
+
+/* for dashboard */
+
+.fordashboardtop {
+    border-radius: 1rem;
+    display: flex;
+    background-color: rgb(102, 150, 184);
+}
+
+.fordashboardtopelements1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    font-size: large;
+    padding: 2%;
+}
+
+.fordashboardtopelements2 {
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.fordashboarddetails {
+    padding: 2%;
+    border-radius: 1rem;
+    background-color: rgb(102, 150, 184);
+}
+
+.outerofdashdetails {
+    /* padding-top: 2%; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fortable {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pad {
+    padding: 7px;
+}
+
+.forbutton2 {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 7px;
+    width: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.foraddbutton{
+    /* width: 30%; */
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.collapsible {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 7px;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: #777; */
+    /* color: white; */
+    cursor: pointer;
+    /* padding: 18px; */
+    /* width: 100%; */
+    /* border: none;
+    text-align: left; */
+    /* outline: none;
+    font-size: 15px; */
+}
+
+.collapsible:hover {
+    background-color: white;
+}
+
+.content {
+    /* padding: 0 18px; */
+    display: none;
+    border-radius: 1rem;
+    background-color: rgb(89, 131, 160);
+    width: 50%;
+    /* overflow: hidden; */
+    /* background-color: #f1f1f1; */
+}
