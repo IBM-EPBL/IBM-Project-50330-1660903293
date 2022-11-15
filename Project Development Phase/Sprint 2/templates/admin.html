@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Admin Dashboard
+</title>
+
+
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+<!-- things
+
+    div 1
+welcome jetson,   sign out
+
+    div 2
+your complaints status
+
+add new complaint -->
+<br>
+<!-- <br>
+{% for i in range(11) %}
+  {{ i }}
+{% endfor %}
+
+<br>
+{% for i in complaints %}
+{{ i['USERNAME'] }}
+<br>
+{% for j in i.values() %}
+    {{ j }}
+{% endfor %}
+<br>
+{% endfor %} -->
+
+<div class="fordashboardtop">
+    <div class="fordashboardtopelements1">
+        Welcome Admin,
+    </div>
+    <div class="fordashboardtopelements2">
+        <a href="/login"><button class="forbutton">Sign out</button></a>
+    </div>
+
+</div>
+<br>
+<div class="outerofdashdetails">
+
+    <div class="fordashboarddetails">
+        <br>
+        <!-- table of customers complaints -->
+        <table class="fortable">
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="pad">
+                        <a href="/agents">Agent Details</a>
+                    </td>
+                    <td class="pad">
+                        <a href="/tickets">Customer Ticket Details</a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <br>
+
+    </div>
+
+</div>
+
+{% endblock %}

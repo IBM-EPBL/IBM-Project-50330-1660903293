@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Dashboard
+</title>
+
+
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+<!-- things
+
+    div 1
+welcome jetson,   sign out
+
+    div 2
+your complaints status
+
+add new complaint -->
+<br>
+<!-- <br>
+{% for i in range(11) %}
+  {{ i }}
+{% endfor %}
+
+<br>
+{% for i in complaints %}
+{{ i['USERNAME'] }}
+<br>
+{% for j in i.values() %}
+    {{ j }}
+{% endfor %}
+<br>
+{% endfor %} -->
+
+<div class="fordashboardtop">
+    <div class="fordashboardtopelements1">
+        Welcome {{ name }},
+    </div>
+    <div class="fordashboardtopelements2">
+        <a href="/login"><button class="forbutton">Sign out</button></a>
+    </div>
+
+</div>
+<br>
+<div class="outerofdashdetails">
+
+    <div class="fordashboarddetails">
+        <br>
+        <!-- table of customers complaints -->
+        <table class="fortable">
+            <thead>
+                <th>Complaint ID</th>
+                <th class="pad">Complaint Detail</th>
+                <th>Assigned Agent</th>
+                <th>Status</th>
+                <th>Solution</th>
+            </thead>
+            <tbody>
+                {% for i in complaints %}
+                <tr>
+                    <td>
+                        {{ i['C_ID'] }}
+                    </td>
+                    <td class="pad">
+                        {{ i['TITLE'] }}
+                    </td>
+                    <td>
+                        {{ i['ASSIGNED_AGENT'] }}
+                    </td>
+                    <td>
+                        {% if i['STATUS'] == 1 %}
+                        Completed
+                        {% elif i['STATUS'] == 0 %}
+                        Not completed
+                        {% else %}
+                        In progress
+                        {% endif %}
+                    </td>
+                    <td>
+                        {{ i['SOLUTION'] }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        <br>
+        <center>
+
+            <div class="fordashboarddetails">
+
+                <button type="button" class="collapsible">Add new complaint ➕</button>
+                <div class="content">
+                    <br>
+                    <form action="/addnew" method="post">
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Title
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="title">
+                            </div>
+                        </div>
+
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Complaint
+                            </div>
+                            <div class="textinformright">
+                                <textarea name="des"
+                                    style="border-radius: 1rem;width: 90%;height: 150%;background-color: black;color: white;"></textarea>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div>
+                            <button class="forbutton" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                    <br>
+                </div>
+
+
+            </div>
+        </center>
+    </div>
+
+</div>
+
+{% endblock %}

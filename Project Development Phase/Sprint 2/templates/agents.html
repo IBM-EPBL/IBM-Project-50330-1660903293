@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Dashboard
+</title>
+
+
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+<!-- things
+
+    div 1
+welcome jetson,   sign out
+
+    div 2
+your complaints status
+
+add new complaint -->
+<br>
+<!-- <br>
+{% for i in range(11) %}
+  {{ i }}
+{% endfor %}
+
+<br>
+{% for i in complaints %}
+{{ i['USERNAME'] }}
+<br>
+{% for j in i.values() %}
+    {{ j }}
+{% endfor %}
+<br>
+{% endfor %} -->
+
+<div class="fordashboardtop">
+    <div class="fordashboardtopelements1">
+        Welcome Admin,
+    </div>
+    <div class="fordashboardtopelements2">
+        <a href="/login"><button class="forbutton">Sign out</button></a>
+    </div>
+
+</div>
+<br>
+<div class="outerofdashdetails">
+
+    <div class="fordashboarddetails">
+        <br>
+        <!-- table of customers complaints -->
+        <table class="fortable">
+            <thead>
+                <th class="pad">Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Domain</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                {% for i in agents %}
+                <tr>
+                    <td class="pad">
+                        {{ i['NAME'] }}
+                    </td>
+                    <td class="pad">
+                        {{ i['USERNAME'] }}
+                    </td>
+                    <td>
+                        {{ i['EMAIL'] }}
+                    </td>
+                    <td>
+                        {{ i['PHN'] }}
+                    </td>
+                    <td>
+                        {{ i['DOMAIN'] }}
+                    </td>
+                    <td>
+                        {% if i['STATUS'] == 1 %}
+                        Assigned to job
+                        {% elif i['STATUS'] == 0 %}
+                        not Available
+                        {% else %}
+                        Available
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        <br>
+        <center>
+
+            <div class="fordashboarddetails">
+
+                <button type="button" class="collapsible">Add new agent ➕</button>
+                <div class="content">
+                    <br>
+                    <form action="/addnewagent" method="post">
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Username
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="username">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Name
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="name">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Email
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="email">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Phone
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="phone">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Domain
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="domain">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Password
+                            </div>
+                            <div class="textinformright">
+                                <input type="password" name="password">
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div>
+                            <button class="forbutton" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                    <br>
+                </div>
+
+
+            </div>
+        </center>
+    </div>
+
+</div>
+
+{% endblock %}

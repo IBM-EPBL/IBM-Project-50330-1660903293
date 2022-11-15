@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>
+    Agent Dashboard
+</title>
+
+
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+<!-- things
+
+    div 1
+welcome jetson,   sign out
+
+    div 2
+your complaints status
+
+add new complaint -->
+<br>
+<!-- <br>
+{% for i in range(11) %}
+  {{ i }}
+{% endfor %}
+
+<br>
+{% for i in complaints %}
+{{ i['USERNAME'] }}
+<br>
+{% for j in i.values() %}
+    {{ j }}
+{% endfor %}
+<br>
+{% endfor %} -->
+
+<div class="fordashboardtop">
+    <div class="fordashboardtopelements1">
+        Welcome {{ name }},
+    </div>
+    <div class="fordashboardtopelements2">
+        <a href="/login"><button class="forbutton">Sign out</button></a>
+    </div>
+
+</div>
+<br>
+<div class="outerofdashdetails">
+
+    <div class="fordashboarddetails">
+        <br>
+        <!-- table of customers complaints -->
+        <table class="fortable">
+            <thead>
+                <th>Complaint ID</th>
+                <th class="pad">Username</th>
+                <th>Title</th>
+                <th>Complaint</th>
+                <th>Solution</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                {% for i in complaints %}
+                <tr>
+                    <td class="pad">
+                        {{ i['C_ID'] }}
+                    </td>
+                    <td class="pad">
+                        {{ i['USERNAME'] }}
+                    </td>
+                    <td>
+                        {{ i['TITLE'] }}
+                    </td>
+                    <td>
+                        {{ i['COMPLAINT'] }}
+                    </td>
+                    <td>
+                        {{ i['SOLUTION'] }}
+                    </td>
+                    <td>
+                        {% if i['STATUS'] == 1 %}
+                        Completed
+                        {% else %}
+                        Not Completed
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        <br>
+        <center>
+
+            <div class="fordashboarddetails">
+
+                <button type="button" class="collapsible">Solve an Issue ⚡</button>
+                <div class="content">
+                    <br>
+                    <form action="/updatecomplaint" method="post">
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Complaint ID
+                            </div>
+                            <div class="textinformright">
+                                <input type="name" name="cid">
+                            </div>
+                        </div>
+                        <div class="forform">
+                            <div class="textinformleft">
+                                Solution
+                            </div>
+                            <div class="textinformright">
+                                <input type="text" name="solution">
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div>
+                            <button class="forbutton" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                    <br>
+                </div>
+
+
+            </div>
+        </center>
+    </div>
+
+</div>
+
+{% endblock %}
