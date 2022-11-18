@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog-in-flask
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: blog-in-flask
+  template:
+    metadata:
+      labels:
+        app: blog-in-flask
+
+    spec:
+      containers:
+        - name: webapp
+          image: jp.icr.io/venkat/webapp
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
